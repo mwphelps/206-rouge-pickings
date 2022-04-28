@@ -204,3 +204,32 @@ footer span {
 		padding: 0;
 	}
 }
+
+@media all and (min-width:1200px) {
+	header {
+		border-bottom: 3px solid #77a466;
+		justify-content: start;
+		align-items: flex-start;
+		flex-flow: row wrap;
+	}
+
+	header h1 {
+		width: auto;
+		text-align: left;
+		border-bottom: 0;
+		width: 60%;
+	}
+
+	header nav {
+		width: 40%;
+	}
+
+	header nav ul {
+		flex-flow: row nowrap;
+		padding: 0.5em 0;
+	}
+
+	header nav ul li {
+		padding: 0 .25em;
+	}
+}

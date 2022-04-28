@@ -49,14 +49,14 @@ header {
 	justify-content: center;
 	align-items: center;
 	flex-flow: column wrap;
-	width: 90%;
+	width: 100%;
 }
 
 header h1 {
 	margin: 0;
 	padding: .5em 0;
 	border-bottom: 3px solid #77a466;
-	width: 90%;
+	width: 100%;
 	text-align: center;
 }
 header h1 span {
@@ -102,7 +102,7 @@ header nav ul li a{
 
 }
 .main-image img {
-	width: 90%;
+	width: 100%;
 	border-bottom: 3px solid #77a466;
 	border-top: 3px solid #77a466;
 }
@@ -169,10 +169,38 @@ footer {
 	justify-content: center;
 	align-items: center;
 	flex-flow: row wrap;
+	width: 100%;
 }
 footer span {
 	font-family: 'Galada', cursive;
 	text-transform: lowercase;
 	color: #77a466;
 	font-size: .875em;
+}
+
+@media all and (min-width:768px) {
+	.bottom-section {
+		align-items: start;
+	}
+	.section-one, .section-two, .section-three {
+		width: 33%;
+	}
+
+	.section-two {
+		border-left: 1px solid #eee;
+		border-right: 1px solid #eee;
+	}
+
+	.section-one h3 {
+		padding: .0625em 0;
+	}
+
+	.section-two h3,
+	.section-three h3 {
+		padding: .625em 1.875em;
+	}
+
+	.menu {
+		padding: 0;
+	}
 }
